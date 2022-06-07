@@ -1,7 +1,8 @@
 @Library('LeiDarinlib@main') _
 
 pipeline {
-    stages {
+   	agent any
+	 stages {
        stage('St 1') {
            steps { 
 		helloWorldExternal(name:"Lei", dayOfWeek:"Fri")
